@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
       - name: http
-        image: sailineni/sample-app:1.0
+        image: sailineni/sample-app:2.0
         ports:
         - containerPort: 80
