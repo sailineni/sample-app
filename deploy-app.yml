@@ -19,17 +19,3 @@ spec:
         image: sailineni/sample-app:1.0
         ports:
         - containerPort: 80
-
----
-kind: Service
-apiVersion: v1
-metadata:
-  name: my-service
-spec:
-  selector:
-    app: sample-app
-  ports:
-  - protocol: TCP
-    port: 80
-    targetPort: http
-  type: NodePort
